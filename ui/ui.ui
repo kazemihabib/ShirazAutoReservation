@@ -1,0 +1,2453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>744</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>744</width>
+    <height>481</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>744</width>
+    <height>481</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>رزور خودکار غذا (نسخه بتا 0.9.0.0)</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>721</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>721</width>
+      <height>461</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>721</width>
+      <height>461</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>B Koodak</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="locale">
+     <locale language="Persian" country="Iran"/>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>true</bool>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="mainPage">
+     <attribute name="title">
+      <string>صفحه اصلی</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>30</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>B Koodak</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>نام کاربری</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="buddy">
+       <cstring>LNEDTusername</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>80</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>B Koodak</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>پسورد</string>
+      </property>
+      <property name="buddy">
+       <cstring>LNEDTpassword</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>130</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>B Koodak</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>انتخاب لیست</string>
+      </property>
+      <property name="buddy">
+       <cstring>CMBXlists</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LNEDTusername">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>30</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="locale">
+       <locale language="English" country="UnitedStates"/>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LNEDTpassword">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>80</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>password</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="CMBXlists">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>130</y>
+        <width>110</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BTNreserv">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>200</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>رزرو</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="QPTXTEDTlogs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>391</width>
+        <height>360</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>B Koodak</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Persian" country="Iran"/>
+      </property>
+      <property name="documentTitle">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="CHKBXthis">
+      <property name="geometry">
+       <rect>
+        <x>549</x>
+        <y>180</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>هفته ی جاری</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="CHKBXnext">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>210</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>هفته ی آینده</string>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="CHKBXshowPassword">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>80</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="createNewList">
+     <attribute name="title">
+      <string>  ساخت و تغییر لیست</string>
+     </attribute>
+     <widget class="QTabWidget" name="TABnewList">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>631</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="restaurant">
+       <attribute name="title">
+        <string> رستوران  </string>
+       </attribute>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>581</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>516</x>
+           <y>50</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string> شنبه</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="CMBbreak0">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>50</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>7</x>
+           <y>30</y>
+           <width>561</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>0</y>
+           <width>20</width>
+           <height>311</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>90</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>1 شنبه</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>10</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>صبحانه</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>10</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ناهار</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>10</y>
+           <width>21</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>شام</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>130</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>2 شنبه</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>170</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>3 شنبه</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>210</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>4 شنبه</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>250</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>5 شنبه</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>290</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string> جمعه</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="CMBlunch0">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>50</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBdinner0">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>50</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBbreak1">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>90</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBlunch1">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>90</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBdinner1">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>90</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBbreak2">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>130</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBdinner2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>130</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBlunch2">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>130</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBbreak3">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>170</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBdinner3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>170</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBlunch3">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>170</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBbreak4">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>210</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBdinner4">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>210</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBlunch4">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>210</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBdinner5">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>250</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBlunch5">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>250</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBbreak5">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>250</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBdinner6">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>290</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBlunch6">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>290</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="CMBbreak6">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>290</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>ارم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی هنر و معماری</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه شهید دستغیب</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی علوم</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی مهندسی نفت و گاز</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی کشاورزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>دانشکده ی دامپزشکی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>خوابگاه دامپزشکی</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="breakfast">
+       <attribute name="title">
+        <string>صبحانه</string>
+       </attribute>
+       <widget class="QPushButton" name="BTNmvRBreak">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>163</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Next.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="LSTWGselectedBreak">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>40</y>
+          <width>256</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>B Koodak</family>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvLBreak">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>190</y>
+          <width>20</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Previous.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvUBreak">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>270</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Upload.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvDBreak">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>290</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Download.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="LSTWGallBreak">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>256</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>B Koodak</family>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>10</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>لیست  غذا ها ی صبحانه</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>10</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>لیست انتخاب های شما</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="breakfast">
+       <attribute name="title">
+        <string> ناهار</string>
+       </attribute>
+       <widget class="QListWidget" name="LSTWGselectedLunch">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>40</y>
+          <width>256</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>B Koodak</family>
+         </font>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="LSTWGallLunch">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>256</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>B Koodak</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvLLunch">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>190</y>
+          <width>20</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Previous.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvRLunch">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>163</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Next.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvDLunch">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>290</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Download.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvULunch">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>270</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Upload.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>10</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>لیست  غذا ها ی ناهار</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>10</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>لیست انتخاب های شما</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="lunch">
+       <attribute name="title">
+        <string>شام</string>
+       </attribute>
+       <widget class="QListWidget" name="LSTWGselectedDinner">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>40</y>
+          <width>256</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>B Koodak</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+       <widget class="QListWidget" name="LSTWGallDinner">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>256</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>B Koodak</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <property name="autoScrollMargin">
+         <number>14</number>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="textElideMode">
+         <enum>Qt::ElideLeft</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvLDinner">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>190</y>
+          <width>20</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Previous.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvRDinner">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>163</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Next.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvDDinner">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>290</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Download.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BTNmvUDinner">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>270</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>C:/Users/pc/Desktop/icons/Button-Upload.ico</normalon>
+         </iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>10</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>لیست انتخاب های شما</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>10</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>لیست  غذا ها ی شام</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="BTNsaveList">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ذخیره</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>10</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>نام لیست</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LNEDTlistName">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>10</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="CMBXeditLists">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>10</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>10</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> لیست های ساخته شده</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BTNrmvlst">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>حذف لیست</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>ابزار</string>
+     </attribute>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>B Koodak</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>بروز رسانی لیست غذا ها و رستوران ها</string>
+      </property>
+      <property name="buddy">
+       <cstring>LNEDTpassword</cstring>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BTNupdate">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>50</y>
+        <width>130</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>بروز رسانی </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>درباره</string>
+     </attribute>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>22</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>version 0.9.0.0 (beta)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>45</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="locale">
+       <locale language="English" country="UnitedStates"/>
+      </property>
+      <property name="text">
+       <string>kazemihabib1996@gmail.com</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>LNEDTusername</tabstop>
+  <tabstop>LNEDTpassword</tabstop>
+  <tabstop>CMBXlists</tabstop>
+  <tabstop>BTNreserv</tabstop>
+  <tabstop>TABnewList</tabstop>
+  <tabstop>CMBbreak0</tabstop>
+  <tabstop>CMBlunch0</tabstop>
+  <tabstop>CMBdinner0</tabstop>
+  <tabstop>CMBbreak1</tabstop>
+  <tabstop>CMBlunch1</tabstop>
+  <tabstop>CMBdinner1</tabstop>
+  <tabstop>CMBbreak2</tabstop>
+  <tabstop>CMBlunch2</tabstop>
+  <tabstop>CMBdinner2</tabstop>
+  <tabstop>CMBbreak3</tabstop>
+  <tabstop>CMBlunch3</tabstop>
+  <tabstop>CMBdinner3</tabstop>
+  <tabstop>CMBbreak4</tabstop>
+  <tabstop>CMBlunch4</tabstop>
+  <tabstop>CMBdinner4</tabstop>
+  <tabstop>CMBbreak5</tabstop>
+  <tabstop>CMBlunch5</tabstop>
+  <tabstop>CMBdinner5</tabstop>
+  <tabstop>CMBbreak6</tabstop>
+  <tabstop>CMBlunch6</tabstop>
+  <tabstop>CMBdinner6</tabstop>
+  <tabstop>LSTWGallBreak</tabstop>
+  <tabstop>LSTWGselectedBreak</tabstop>
+  <tabstop>BTNmvRBreak</tabstop>
+  <tabstop>BTNmvLBreak</tabstop>
+  <tabstop>BTNmvUBreak</tabstop>
+  <tabstop>BTNmvDBreak</tabstop>
+  <tabstop>LSTWGallLunch</tabstop>
+  <tabstop>LSTWGselectedLunch</tabstop>
+  <tabstop>BTNmvRLunch</tabstop>
+  <tabstop>BTNmvLLunch</tabstop>
+  <tabstop>BTNmvULunch</tabstop>
+  <tabstop>BTNmvDLunch</tabstop>
+  <tabstop>LSTWGallDinner</tabstop>
+  <tabstop>LSTWGselectedDinner</tabstop>
+  <tabstop>BTNmvRDinner</tabstop>
+  <tabstop>BTNmvLDinner</tabstop>
+  <tabstop>BTNmvUDinner</tabstop>
+  <tabstop>BTNmvDDinner</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>CMBXeditLists</sender>
+   <signal>activated(QString)</signal>
+   <receiver>LNEDTlistName</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LNEDTlistName</sender>
+   <signal>returnPressed()</signal>
+   <receiver>BTNsaveList</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>156</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
